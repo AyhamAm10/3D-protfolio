@@ -23,7 +23,7 @@ const Navbar = () => {
        >
        <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
+            Ayham &nbsp;
             <span className='sm:block hidden'> | JavaScript Mastery</span>
           </p>
        </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="sm:hidden flex flex-1 justify-end items-center ">
               <img
               src={
-                toggle?menu : close
+                !toggle?menu : close
               } 
               className="w-[28px] h-[28px]"
               onClick={()=>{settoggle(!toggle)}}
